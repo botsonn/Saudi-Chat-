@@ -3,7 +3,6 @@ from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboa
 from AarohiX import app
 import os
 
-
 @app.on_chat_member_updated(filters=lambda _, response: response.new_chat_member, group=847)
 async def WelcomeDev(_, response: ChatMemberUpdated):
     dev_id = 5160061304 # حط ايديك هنا
