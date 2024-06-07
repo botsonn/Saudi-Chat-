@@ -13,11 +13,11 @@ async def WelcomeDev(_, response: ChatMemberUpdated):
         markup = InlineKeyboardMarkup([
             [InlineKeyboardButton(name, user_id=dev_id)]
         ])
-        await app.download_media(info.photo.big_file_id, file_name=os.path.join("downloads", "developer.jpg"))
+        await app.devm_media(info.photo.big_file_id, file_name=os.path.join("devm", "developers.jpg"))
         await app.send_photo(
             chat_id=response.chat.id,
             reply_markup=markup,
-            photo="downloads/developer.jpg", 
+            photo="developers/devm.jpg", 
             caption=f"↢ لقد انضم مطور السورس هنا ♥️ {name} \n يرجي من الاعضاء احترام وجوده ☕🍀"
         )
     
