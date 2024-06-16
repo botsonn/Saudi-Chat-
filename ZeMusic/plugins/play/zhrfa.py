@@ -1,11 +1,7 @@
-
-import random
-import re
-
-from strings.filters import command
 from pyrogram import Client
-from pyrogram.types import Message
+from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
 from ZeMusic import app
+import os
 
 @app.on_message(command("زخرفه"))
 async def zahrafa(c: Client, m: Message):
